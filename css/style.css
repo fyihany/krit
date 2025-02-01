@@ -310,6 +310,12 @@ footer {
     }
 }
 
+@media (max-width: 1200px) {
+    .par {
+        text-align: left;
+    }
+}
+
 
 @media (max-width: 900px) {
     .sections {
