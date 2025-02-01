@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="726.21057"
+   height="421.07028"
+   viewBox="0 0 192.14321 111.40818"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <g
+     id="layer1"
+     transform="translate(-11.748725,-104.78862)">
+    <g
+       id="g93">
+      <path
+         id="path81"
+         style="font-size:133.333px;line-height:1.25;font-family:Haettenschweiler;-inkscape-font-specification:'Haettenschweiler, Normal';white-space:pre;stroke-width:5.53701"
+         d="m 223.66583,340.02061 v 28.91444 H 326.7307 v 78.619 h 20.50771 v -78.619 h 22.17842 v -28.91444 z m 69.60166,5.10762 h 18.55435 v 17.56594 h -18.55435 z"
+         transform="matrix(1.0859812,0,0,1.0360329,-197.2878,-247.48392)" />
+      <path
+         style="font-size:133.333px;line-height:1.25;font-family:Haettenschweiler;-inkscape-font-specification:'Haettenschweiler, Normal';white-space:pre;stroke-width:5.53701"
+         d="m 311.82195,447.55398 h -18.55464 v -75.58574 h 18.55464 z"
+         id="path80"
+         transform="matrix(1.0859812,0,0,1.0360329,-197.2878,-247.48392)" />
+      <path
+         style="font-size:133.333px;line-height:1.25;font-family:Haettenschweiler;-inkscape-font-specification:'Haettenschweiler, Normal';white-space:pre;stroke-width:5.53701"
+         d="m 290.07722,403.28326 h -18.55464 v -16.40621 c 0,-2.30034 -1.06337,-3.45051 -3.1901,-3.45051 -2.12673,0 -3.19009,1.10677 -3.19009,3.32031 v 60.80713 h -18.55464 v -75.58574 h 18.55464 v 2.53905 c 2.47395,-2.03992 6.29338,-3.05988 11.4583,-3.05988 3.68923,0 6.85762,0.99826 9.50518,2.99478 2.64757,1.95312 3.97135,4.53558 3.97135,7.74738 z"
+         id="path78"
+         transform="matrix(1.0859812,0,0,1.0360329,-197.2878,-247.48392)" />
+      <path
+         style="font-size:133.333px;line-height:1.25;font-family:Haettenschweiler;-inkscape-font-specification:'Haettenschweiler, Normal';white-space:pre;stroke-width:5.53701"
+         d="m 243.39765,447.55398 h -22.52598 l -7.87759,-34.63533 v 34.63533 H 192.48632 V 340.02063 h 20.50776 v 45.29393 l 8.98435,-45.29393 h 19.01037 l -12.63017,56.75223 z"
+         id="text78"
+         transform="matrix(1.0859812,0,0,1.0360329,-197.2878,-247.48392)" />
+    </g>
+  </g>
+</svg>

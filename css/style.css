@@ -1,117 +1,286 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+:root {
+    --primary-color: #111111;
+    --secondary-color: #F3F3F3;
+    --tertiary-color: #C8C8C9;
+}
+
 * {
     font-family: "Roboto", serif;
-    color: #111111;
+    color: var(--primary-color);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body,
 html {
-    background-color: #F3F3F3;
+    background-color: var(--secondary-color);
     min-height: 100dvh;
-    scroll-behavior: smooth;
-}
-
-body {
-    padding-inline: 6rem;
-    padding-top: 8rem;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-block: .5rem;
+    padding-inline: 2rem;
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    background-color: var(--secondary-color);
+    gap: 1rem;
+    z-index: 100;
+    border-bottom: 1px solid var(--tertiary-color);
+}
+
+main {
+    padding-inline: 2rem;
+}
+
+h1 {
+    margin-block: 5rem;
+    font-size: 40px;
+}
+
+.header__placeholder {
+    width: 100%;
+    height: 100px;
+}
+
+.city__panorama {
+    margin-top: 4rem;
+    width: 100%;
+    align-self: center;
+    filter: grayscale(0.8);
+}
+
+.main__photo {
+    position: absolute;
+    width: 210px;
+    right: 10%;
+    top: 0;
+}
+
+.btn__box {
+    z-index: 1;
+}
+
+.btn {
+    position: relative;
+    background-color: transparent;
+    outline: none;
+    border: 2px solid var(--primary-color);
+    font-size: 24px;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    overflow: hidden;
+    transition: color 150ms linear;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background-color: var(--primary-color);
+    transition: height 150ms linear;
+    z-index: -1;
+}
+
+.btn:hover::before {
+    height: 100%;
+}
+
+.btn:hover {
+    color: var(--secondary-color);
+}
+
+.block {}
+
+.sections::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    width: 90%;
+    height: 2px;
+    background-color: var(--tertiary-color);
+}
+
+h2 {
+    font-size: 30px;
+}
+
+.sections {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    flex-wrap: nowrap;
+    gap: 5rem;
+    position: relative;
+    padding-bottom: 2rem;
     margin-bottom: 4rem;
+}
+
+.par {
+    margin-top: 1rem;
+    font-size: 24px;
+    text-align: justify;
+}
+
+.about__us {}
+
+.why__us {}
+
+.our__projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    margin-bottom: 4rem;
+}
+
+.image__container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.example__img {
+    width: 20%;
+    filter: grayscale(0.3);
+    cursor: pointer;
+    transition: all 200ms linear;
+}
+
+.example__img:hover {
+    box-shadow: 0 0 5px 1px var(--primary-color);
+}
+
+.contact__us {
+    margin-bottom: 4rem;
+}
+
+.contact__us__box {
+    display: flex;
+}
+
+.contact__us__text {
+    flex: 1;
+}
+
+form {
+    flex: 1.8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.form_input {
+    width: 50%;
+    padding: 10px 15px;
+    font-size: 24px;
+    outline: none;
+    background-color: var(--secondary-color);
+    border: 2px solid var(--tertiary-color);
+    transition: all 150ms linear;
+}
+
+.form_input:focus {
+    border: 2px solid var(--primary-color);
+}
+
+.form_input:valid {
+    border: 2px solid green;
+}
+
+input:-webkit-autofill {
+    /* background-color: var(--secondary-color) !important; */
+    -webkit-box-shadow: 0 0 0px 1000px var(--secondary-color) inset !important;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 2rem;
+    padding-block: 2rem;
+    border-top: 1px solid var(--tertiary-color);
+    line-height: 2rem;
+}
+
+.initials {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-right: 5rem;
+    font-size: 20px;
+    gap: 1rem;
+}
+
+.link {
+    text-underline-offset: 6px;
+    transition: all 150ms linear;
+}
+
+.link:hover {
+    text-decoration-color: var(--secondary-color);
+}
+
+/* Modal background */
+#modal {
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding-inline: 6rem;
-    padding-block: 1rem;
-    background-color: #F3F3F3;
-}
-
-
-.nav__header {
-    display: flex;
-    flex: 1;
-    justify-content: end;
-    gap: 2rem;
-}
-
-.nav__btn {
-    position: relative;
-    text-decoration: none;
-    padding: 10px 15px;
-    border-radius: 100vh;
-    font-size: 24px;
-    outline: none;
-    border: 2px solid #111111;
-    color: #111111;
-    background-color: transparent;
-    overflow: hidden;
-    z-index: 0;
-    transition: color 200ms linear;
-}
-
-.nav__btn::before {
-    content: '';
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
     height: 100%;
-    background-color: #111111;
-    z-index: -1;
-    transition: top 200ms linear;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
 }
 
-.nav__btn:hover {
-    color: #F3F3F3;
-}
 
-.nav__btn:hover::before {
-    top: 0;
-}
 
-.logo__box {
-    flex: 2;
-}
-
-.home {
-    text-decoration: none;
-}
-
-h1 {
-    font-weight: 500;
-    font-size: 4rem;
-}
-
-h2 {
-    font-size: 2.5rem;
-    font-weight: 400;
-    margin-bottom: 1rem;
-}
-
-h3 {
-    font-weight: 400;
+/* Modal content */
+#modal div {
+    background-color: var(--secondary-color);
+    padding: 20px;
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
     font-size: 2rem;
-    margin-bottom: 1rem;
+    z-index: 100;
+    animation: fadeIn 0.3s ease-in-out;
 }
 
-#about__us {
-    margin-block: 2rem;
-    text-align: justify;
-}
+/* Modal fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
 
-p {
-    font-size: 1.7rem;
-    font-weight: 300;
-}
-
-article {
-    margin: 2rem;
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
 }

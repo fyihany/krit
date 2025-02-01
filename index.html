@@ -10,73 +10,98 @@
 
 <body>
     <header>
-        <a href="https://krit.cz" class="home">
-            <div class="logo__box">
-                <h1>Krit.cz</h1>
-            </div>
+        <a href="#">
+            <img src="./img/logo.svg" class="logo" alt="logo of the krit.cz company" width="120">
         </a>
-        <nav class="nav__header">
-            <a href="#about__us" class="nav__btn">O&nbsp;nás</a>
-            <a href="#projects" class="nav__btn">Projekty</a>
-            <a href="#contact" class="nav__btn">Kontakt</a>
-        </nav>
+
+        <div class="btn__box">
+            <a href="#contact" class="btn">Kontakt</a>
+        </div>
     </header>
 
     <main>
-        <section id="about__us">
-            <h2>O nás</h2>
-            <p>
-                Jsme tým profesionálů specializující se na správu nemovitostí, poradenství a vedení společenství
-                vlastníků jednotek
-                (SVJ). Naší prioritou je přinášet efektivní a praktická řešení, která šetří váš čas a náklady.
-            </p>
+        <div class="header__placeholder"></div>
+        <img src="./img/city_panorama.jpg" class="city__panorama" alt="ostrava city panorama">
+        <h1>KRIT&nbsp;CZ&nbsp;– odborné&nbsp;vedení, efektivní&nbsp;správa, úspěšné&nbsp;investice</h1>
+        <div class="sections">
+            <section class="block about__us">
+                <h2>Kdo jsme?</h2>
+                <p class="par">Jsme společnost specializující se na poskytování odborných služeb v oblasti správy a
+                    řízení společenství vlastníků
+                    jednotek (SVJ). Zajišťujeme výkon funkce předsedy SVJ, odborné poradenství v oblasti řízení SVJ a
+                    organizaci schůzí.
+                    Kromě toho nabízíme konzultace v oblasti investičních nemovitostí, jejich správu a komplexní
+                    rekonstrukce interiérů na
+                    klíč. Více informací o našich stavebních službách naleznete <a class="link"
+                        href="https://kompletnistavebni.webnode.cz/" target="_blank" rel="noopener">zde</a>.</p>
+            </section>
 
-            <article id="professional__chairman">
-                <h3>Proč mít profesionálního předsedu SVJ?</h3>
-                <p>
-                    Profesionální předseda přináší odborné znalosti, rychlost a efektivitu při řešení problémů — na
-                    rozdíl od
-                    volených předsedů z řad vlastníků je nestranný a nezávislý. Dokáže optimalizovat náklady, předcházet
-                    nekvalitním
-                    úvěrům nebo špatně nasmlouvaným službám a přebírá za vás časově náročné povinnosti. Naše společnost
-                    vám pomůže
-                    zbavit se starostí a zajistit bezproblémové vedení vašeho SVJ.
+            <section class="why__us">
+                <h2>Proč si vybrat právě nás?</h2>
+                <p class="par">
+                    Správa Společenství vlastníků jednotek (SVJ) může být časově náročná a vyžaduje odborné znalosti.
+                    Profesionální
+                    předseda SVJ přináší efektivní řízení díky své odbornosti, přehledu a kontaktům, což vede k
+                    rychlejšímu
+                    a
+                    úspornějšímu řešení problémů. Na rozdíl od voleného předsedy z řad vlastníků je nestranný, nezávislý
+                    a
+                    není
+                    ovlivněn sousedskými vztahy. Díky zkušenostem dokáže optimalizovat náklady SVJ, vyhnout se
+                    nevýhodným
+                    smlouvám a
+                    zbytečným výdajům, což ve výsledku znamená i finanční úsporu pro vlastníky. Navíc přebíráme veškeré
+                    administrativní a organizační povinnosti, čímž vám šetříme nejen peníze, ale i váš cenný čas.
                 </p>
-            </article>
+        </div>
 
-            <article id="investment__advice">
-                <h3>Poradenství v investičních nemovitostech</h3>
-                <p>
-                    Pomáháme investorům efektivně zhodnotit jejich příležitosti — působíme v oblasti privátních i
-                    komerčních
-                    nemovitostí již řadu let a přinášíme odborný pohled na potenciální investice. Sledujeme aktuální
-                    trendy na
-                    dynamicky se měnícím trhu, abychom zajistili, že vaše investice přináší maximální hodnotu.
+        <section id="contact" class="contact__us">
+            <h2>Chcete vědět víc?</h2>
+            <div class="contact__us__box">
+                <p class="par contact__us__text">
+                    Pokud máte zájem o spolupráci, vyplňte prosím tento formulář. Stačí zadat svůj e-mail a telefonní
+                    číslo
+                    a my se vám co
+                    nejdříve ozveme. Vaše kontaktní údaje použijeme výhradně za účelem zpětného kontaktování a nebudou
+                    sdíleny s třetími
+                    stranami.
                 </p>
-            </article>
+                <form id="contact__form">
+                    <form action="#" id="contact__form">
+                        <input class="form_input" type="tel" name="phone" id="phone"
+                            pattern="^(\+?[0-9]{1,4}\s?)?([0-9]{3}\s?[0-9]{3}\s?[0-9]{3})$" placeholder="Telefon"
+                            required
+                            oninvalid="this.setCustomValidity('Zadejte správně telefonní číslo v těchto formátech:\n\n+420 123 456 789\n\n 123 456 789\n\nTelefonní číslo může být zadáno s mezerami i bez mezer.')"
+                            oninput="this.setCustomValidity('')">
 
-            <article id="property__management">
-                <h3>Komplexní správa investičních nemovitostí</h3>
-                <p>
-                    Postaráme se o všechny aspekty správy vaší investiční nemovitosti — od administrativy až po
-                    komunikaci. Díky
-                    našim standardizovaným procesům a odbornému přístupu můžete být zcela pasivním příjemcem výnosů,
-                    zatímco my
-                    zajistíme, že vaše portfolio funguje hladce a efektivně.
-                </p>
-            </article>
-        </section>
+                        <input class="form_input" type="email" name="mail" id="mail" placeholder="E-mail" required
+                            oninvalid="this.setCustomValidity('Zadejte platnou e-mailovou adresu ve formátu:\n\njmeno@domena.cz')"
+                            oninput="this.setCustomValidity('')">
 
-        <section id="projects">
-            <h2>Projekty</h2>
-        </section>
-
-        <section id="contact">
-            <h2>Kontakt</h2>
+                        <div class="btn__box">
+                            <button type="submit" class="btn">Odeslat</button>
+                        </div>
+                    </form>
+                </form>
+            </div>
         </section>
     </main>
 
-    <footer></footer>
+
+    <footer>
+        <div class="initials">
+            <h3>KRIT CZ s.r.o.</h3>
+            <p>Jan Maceček, MBA</p>
+            <a class="link" href="https://maps.app.goo.gl/cHVFEwwHJpHHbncj8" target="_blank"
+                rel="noopener nofollow noreferrer">Klimentská 1746/52, Nové Město, 110 00 Praha 1</a>
+            <a class="link" href="https://maps.app.goo.gl/65XVQRV7c4HDJCSY6" target="_blank"
+                rel="noopener nofollow noreferrer">Zkrácená 2703, 700 30 Ostrava</a>
+        </div>
+        <div class="contact_info">
+            <a class="link" href="mailto:hanus.t1922@gmail.cz">jan.macecek@krit.cz</a>
+            <a class="link" href="tel:+420 602 612 216 ">+420 602 612 216</a>
+        </div>
+    </footer>
 
     <script src="./js/script.js"></script>
 </body>
