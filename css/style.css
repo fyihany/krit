@@ -129,6 +129,8 @@ h2 {
     margin-bottom: 4rem;
 }
 
+
+
 .par {
     margin-top: 1rem;
     font-size: 24px;
@@ -232,12 +234,35 @@ footer {
 }
 
 .link {
+    text-decoration: underline;
+    text-decoration-color: var(--primary-color);
     text-underline-offset: 6px;
-    transition: all 150ms linear;
+    transition: text-decoration-color 150ms linear;
 }
 
 .link:hover {
     text-decoration-color: var(--secondary-color);
+}
+
+.link:active,
+.link:focus {
+    text-decoration-color: var(--primary-color);
+    animation: underlineChange 1s ease-in-out;
+}
+
+/* Definice animace */
+@keyframes underlineChange {
+    0% {
+        text-decoration-color: var(--primary-color);
+    }
+
+    50% {
+        text-decoration-color: var(--secondary-color);
+    }
+
+    100% {
+        text-decoration-color: var(--primary-color);
+    }
 }
 
 /* Modal background */
@@ -282,5 +307,43 @@ footer {
     to {
         opacity: 1;
         transform: scale(1);
+    }
+}
+
+
+@media (max-width: 900px) {
+    .sections {
+        flex-direction: column;
+    }
+
+    .contact__us__box {
+        flex-direction: column;
+        gap: 5rem;
+    }
+
+    form {
+        gap: 1rem;
+    }
+
+    .form_input {
+        width: 100%;
+    }
+
+    .city__panorama {
+        display: none !important;
+    }
+}
+
+@media (max-width: 800px) {
+    footer {
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .initials {
+        gap: .8rem;
     }
 }
