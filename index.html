@@ -4,8 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
     <title>Krit.cz - Váš partner pro správu a investice</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -13,47 +17,43 @@
         <a href="#">
             <img src="./img/logo.svg" class="logo" alt="logo of the krit.cz company" width="120">
         </a>
-
         <div class="btn__box">
             <a href="#contact" class="btn">Kontakt</a>
         </div>
     </header>
-
     <main>
-        <div class="header__placeholder"></div>
-        <img src="./img/city_panorama.jpg" class="city__panorama" alt="ostrava city panorama">
-        <h1 class="fade__in__text">KRIT&nbsp;CZ&nbsp;– odborné&nbsp;vedení, efektivní&nbsp;správa,
-            úspěšné&nbsp;investice</h1>
+        <!-- Hero sekce s animovaným pozadím (efekt zoom/parallax) -->
+        <section class="hero">
+            <div class="hero-bg"></div>
+            <h1 class="fade__in__text">
+                KRIT&nbsp;CZ&nbsp;– odborné&nbsp;vedení, efektivní&nbsp;správa, úspěšné&nbsp;investice
+            </h1>
+        </section>
+
         <div class="sections">
             <section class="block about__us">
                 <h2>Kdo jsme?</h2>
-                <p class="par">Jsme společnost specializující se na poskytování odborných služeb v oblasti správy a
-                    řízení společenství vlastníků
-                    jednotek (SVJ). Zajišťujeme výkon funkce předsedy SVJ, odborné poradenství v oblasti řízení SVJ a
-                    organizaci schůzí.
-                    Kromě toho nabízíme konzultace v oblasti investičních nemovitostí, jejich správu a komplexní
-                    rekonstrukce interiérů na
-                    klíč. Více informací o našich stavebních službách naleznete <a class="link"
-                        href="https://kompletnistavebni.webnode.cz/" target="_blank" rel="noopener">zde</a>.</p>
+                <p class="par">
+                    Jsme společnost specializující se na poskytování odborných služeb v oblasti správy a řízení
+                    společenství vlastníků jednotek (SVJ). Zajišťujeme výkon funkce předsedy SVJ, odborné poradenství v
+                    oblasti řízení SVJ a organizaci schůzí. Kromě toho nabízíme konzultace v oblasti investičních
+                    nemovitostí, jejich správu a komplexní rekonstrukce interiérů na klíč. Více informací o našich
+                    stavebních službách naleznete <a class="link" href="https://kompletnistavebni.webnode.cz/"
+                        target="_blank" rel="noopener">zde</a>.
+                </p>
             </section>
-
             <section class="why__us">
                 <h2>Proč si vybrat právě nás?</h2>
                 <p class="par">
                     Správa Společenství vlastníků jednotek (SVJ) může být časově náročná a vyžaduje odborné znalosti.
-                    Profesionální
-                    předseda SVJ přináší efektivní řízení díky své odbornosti, přehledu a kontaktům, což vede k
-                    rychlejšímu
-                    a
-                    úspornějšímu řešení problémů. Na rozdíl od voleného předsedy z řad vlastníků je nestranný, nezávislý
-                    a
-                    není
-                    ovlivněn sousedskými vztahy. Díky zkušenostem dokáže optimalizovat náklady SVJ, vyhnout se
-                    nevýhodným
-                    smlouvám a
-                    zbytečným výdajům, což ve výsledku znamená i finanční úsporu pro vlastníky. Navíc přebíráme veškeré
-                    administrativní a organizační povinnosti, čímž vám šetříme nejen peníze, ale i váš cenný čas.
+                    Profesionální předseda SVJ přináší efektivní řízení díky své odbornosti, přehledu a kontaktům, což
+                    vede k rychlejšímu a úspornějšímu řešení problémů. Na rozdíl od voleného předsedy z řad vlastníků je
+                    nestranný, nezávislý a není ovlivněn sousedskými vztahy. Díky zkušenostem dokáže optimalizovat
+                    náklady SVJ, vyhnout se nevýhodným smlouvám a zbytečným výdajům, což ve výsledku znamená i finanční
+                    úsporu pro vlastníky. Navíc přebíráme veškeré administrativní a organizační povinnosti, čímž vám
+                    šetříme nejen peníze, ale i váš cenný čas.
                 </p>
+            </section>
         </div>
 
         <section id="contact" class="contact__us">
@@ -61,33 +61,20 @@
             <div class="contact__us__box">
                 <p class="par contact__us__text">
                     Pokud máte zájem o spolupráci, vyplňte prosím tento formulář. Stačí zadat svůj e-mail a telefonní
-                    číslo
-                    a my se vám co
-                    nejdříve ozveme. Vaše kontaktní údaje použijeme výhradně za účelem zpětného kontaktování a nebudou
-                    sdíleny s třetími
-                    stranami.
+                    číslo a my se vám co nejdříve ozveme. Vaše kontaktní údaje použijeme výhradně za účelem zpětného
+                    kontaktování a nebudou sdíleny s třetími stranami.
                 </p>
                 <form id="contact__form">
-                    <form action="#" id="contact__form">
-                        <input class="form_input" type="tel" name="phone" id="phone"
-                            pattern="^(\+?[0-9]{1,4}\s?)?([0-9]{3}\s?[0-9]{3}\s?[0-9]{3})$" placeholder="Telefon"
-                            required
-                            oninvalid="this.setCustomValidity('Zadejte správně telefonní číslo v těchto formátech:\n\n+420 123 456 789\n\n 123 456 789\n\nTelefonní číslo může být zadáno s mezerami i bez mezer.')"
-                            oninput="this.setCustomValidity('')">
-
-                        <input class="form_input" type="email" name="mail" id="mail" placeholder="E-mail" required
-                            oninvalid="this.setCustomValidity('Zadejte platnou e-mailovou adresu ve formátu:\n\njmeno@domena.cz')"
-                            oninput="this.setCustomValidity('')">
-
-                        <div class="btn__box">
-                            <button type="submit" class="btn">Odeslat</button>
-                        </div>
-                    </form>
+                    <input class="form_input" type="tel" name="phone" id="phone"
+                        pattern="^(\+?[0-9]{1,4}\s?)?([0-9]{3}\s?[0-9]{3}\s?[0-9]{3})$" placeholder="Telefon" required>
+                    <input class="form_input" type="email" name="mail" id="mail" placeholder="E-mail" required>
+                    <div class="btn__box">
+                        <button type="submit" class="btn">Odeslat</button>
+                    </div>
                 </form>
             </div>
         </section>
     </main>
-
 
     <footer>
         <div class="initials">
@@ -103,15 +90,19 @@
             </a>
         </div>
         <div class="contact_info">
-            <a class="link" href="mailto:jan.macecek@krit.cz" title="jan.macecek@krit.cz">
-                jan.macecek@krit.cz
+            <a href="https://www.linkedin.com/in/jan-mace%C4%8Dek/" target="_blank">
+                <img src="./img/main_photo_2.JPG" alt="main photo" class="main_photo">
             </a>
-            <a class="link" href="tel:+420602612216" title="+420 602 612 216">
-                +420 602 612 216
-            </a>
+            <div class="contact_info_box">
+                <a class="link" href="mailto:jan.macecek@krit.cz" title="jan.macecek@krit.cz">
+                    jan.macecek@krit.cz
+                </a>
+                <a class="link" href="tel:+420602612216" title="+420 602 612 216">
+                    +420 602 612 216
+                </a>
+            </div>
         </div>
     </footer>
-
 
     <script src="./js/script.js"></script>
 </body>
