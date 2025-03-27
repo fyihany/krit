@@ -32,7 +32,7 @@ a {
 
 /* HLAVIČKA */
 header {
-    background: #808080;
+    background: rgb(199, 199, 199);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     padding: 1rem 2rem;
     position: fixed;
@@ -47,6 +47,7 @@ header {
 }
 
 .logo {
+    width: 13rem;
 }
 
 .btn__box {
