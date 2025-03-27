@@ -3,7 +3,7 @@ const phoneInput = document.querySelector("#phone");
 const mailInput = document.querySelector("#mail");
 
 const API_URL =
-  "https://script.google.com/macros/s/AKfycbzLV1W4cZzfsOw2Rt5UXZ5O5gJljlrOvbDl8yhz1nsyuFCjyBq6T3KF4Y7T5UOCKck5/exec";
+  "https://script.google.com/macros/s/AKfycbxlB9VKS1RIm1qEuKCKvUcQC3Jq3Z3dLgOfwYz99FT_jBy4Qwaqu_r4wzgGmxc5SuyL/exec";
 
 // Funkce pro vytvoření modálního okna
 function createModal(message) {
